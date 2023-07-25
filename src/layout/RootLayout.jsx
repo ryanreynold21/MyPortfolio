@@ -1,12 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
+import Navbar from './Navbar'
 
 const RootLayout = ({children}) => {
     const [sidebarOpen,setSidebarOpen] = useState(true)
+    useEffect(() => {
+      const handleWindowResize = () => {
+        const isMobile = window.matchMedia("(max-width: 900px)").matches;
+        setSidebarOpen(!isMobile);
+      };
+ 
+      handleWindowResize(); // Set initial state on component mount
+      window.addEventListener("resize", handleWindowResize);
+ 
+      return () => {
+        window.removeEventListener("resize", handleWindowResize);
+      };
+    }, []);
+ 
   return (
     <div>
         {sidebarOpen && <Sidebar /> }
-      <div className=" md:ml-[300px] bg-[#34353A]">
+      <div className=" lg:ml-[440px] bg-[#34353A]">
+        <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         {children}
       </div>
     </div>
