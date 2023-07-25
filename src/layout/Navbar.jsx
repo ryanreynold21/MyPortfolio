@@ -11,7 +11,7 @@ const Navbar = ({setSidebarOpen,sidebarOpen}) => {
         <div className=" text-white py-3 px-5">
             <a className=' text-[25px] font-[600]' href="/">AKW</a>
         </div>
-        <div className=" h-12 mt-2 mr-10" onClick={handler}>
+        <div className=" h-12 mt-2 mr-4" onClick={handler}>
           <button className=" px-2 py-3">
             <p className="w-8 h-[3px] border-b-[1px] bg-white"></p>
             <p className="w-8 h-[3px] border-b-[1px] my-2 bg-white"></p>
