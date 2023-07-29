@@ -1,10 +1,175 @@
-import React from 'react'
+import React, { useState } from 'react'
 import RootLayout from '../layout/RootLayout'
+import akw from '../images/akw.jpg'
+import { status1 } from '../component/status'
+import { status2 } from '../component/status'
+import {RiArrowRightSFill} from 'react-icons/ri'
 
 const About = () => {
+  console.log(status2)
   return (
     <RootLayout>
-      about
+      <section>
+        <div className="">
+          {/* about */}
+          <div className=" mt-[120px] mb-[80px] ml-[50px] flex flex-col gap-5">
+            <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[70px]">
+              <span className=' font-bold'>About</span> 
+            </div>
+            <h1 className=' text-white text-[30px] font-[800]'>About Me</h1>
+          </div>
+          {/* Photo */}
+          <div className="flex justify-center items-center">
+            <img src={akw} className='h-[600px] w-[900px] object-cover object-top shadow-xl' alt="" />
+          </div>
+          {/* name */}
+          <div className=" mx-[50px] mt-[40px]  mb-[50px] border-b border-[#BBBBBB] pb-[22px] flex flex-col gap-2">
+            <h3 className=' text-[22px] font-[700] text-white'>Aung Kyaw Win</h3>
+            <span className=' text-[#bbbbbb]'>Front-end Developer</span>
+            {/* <p className=' w-full bg-[#FFFFFF] h-[1px]'></p> */}
+          </div>
+          {/* myself */}
+          <div className=" mx-[50px]">
+            <div className=" text-[15px] text-[#BBBBBB] flex flex-col gap-5 border-b border-[#BBBBBB] pb-[30px]">
+                <p className=' leading-7'>Hello, I'm Adriano Smith, an experienced React developer. My journey began in web development with React, but over the last decade, I've devoted most of my waking hours to mastering React and creating exceptional web applications.</p>
+                <p className=' leading-7'>My specialty lies in crafting full-fledged platforms from scratch, where I transform ideas into reality. I take great pride in delivering websites and applications with a unique, outstanding, and contemporary look-and-feel. Thanks to my extensive knowledge of web mechanics, I excel in optimizing complex integrations to ensure minimal maintenance while ensuring they run smoothly for years to come. As a React developer, I'm passionate about building seamless user experiences and pushing the boundaries of what's possible with cutting-edge technologies.</p>
+            </div>
+          </div>
+          {/* status */}
+          <div className=" mx-[50px] flex justify-between py-[40px] pr-[120px] border-b border-[#BBBBBB]">
+              <div className="">
+                  <ul className='flex flex-col gap-3'>
+                    {status1.map(status => (
+                      <li className=' grid grid-cols-3 gap-3' key={status.id}>
+                        <span className=' text-white text-[15px] font-[700]'>{status.name}</span>
+                        <span className=' col-span-2 text-[#BBBBBB] text-[15px] font-[400]'>{status.data}</span>
+                      </li>
+                    ))}
+                  </ul>
+              </div>
+              <div className="">
+                  <ul className='flex flex-col gap-3'>
+                    {status2.map(status => (
+                      <li className='grid grid-cols-3 gap-3' key={status.id}>
+                        <span className=' text-white text-[15px] font-[700]'>{status.name}</span>
+                        <span className=' col-span-2 text-[#BBBBBB] text-[15px] font-[400]'>{status.data}</span>
+                      </li>
+                    ))}
+                  </ul>
+              </div>
+          </div>
+          {/* button */}
+          <div className="">
+            <div className=" mx-[50px] mt-[50px] mb-[100px]">
+              <button className=' bg-white text-black px-[40px] py-[15px]'>Download CV</button>
+            </div>
+          </div>
+          {/* skills */}
+          <div className=" px-[50px] bg-[#494B50] py-[100px]">
+            <div className="">
+              <h1 className='text-white text-[22px] font-[700]'>My Skills</h1>
+              {/* html */}
+              <div className="flex px-4">
+                <div className="text-semibold text-white">HTML5</div>
+                <div className=" sm:mx-80 mx-[210px] text-sm text-white">90%</div>
+              </div>
+              <div className="px-4 mt-2 flex">
+                <div className="bg-[#FFFFFF] w-[45%] h-1"></div>
+                <div className="bg-[#595B60] h-1 w-[5%]"></div>
+              </div>
+              {/* CSS */}
+              <div className="flex px-4 mt-9 text-white">
+                <div className="font-medium ">CSS</div>
+                <div className=" sm:mx-72 mx-[160px] text-sm">75%</div>
+              </div>
+              <div className="px-4 mt-2 flex">
+                <div className="bg-[#FFFFFF] w-[35%] h-1"></div>
+                <div className="bg-[#595B60] h-1 w-[15%]"></div>
+              </div>
+              {/* Javascript */}
+              <div className="flex px-4 mt-9 text-white">
+                <div className="font-medium ">Javascript</div>
+                <div className=" sm:mx-72 mx-[160px] text-sm">80%</div>
+              </div>
+              <div className="px-4 mt-2 flex">
+                <div className="bg-[#FFFFFF] w-[40%] h-1"></div>
+                <div className="bg-[#595B60] h-1 w-[10%]"></div>
+              </div>
+              {/* REACT */}
+              <div className="flex px-4 mt-9 text-white">
+                <div className="font-medium ">REACT</div>
+                <div className=" sm:mx-72 mx-[160px] text-sm">85%</div>
+              </div>
+              <div className="px-4 mt-2 flex">
+                <div className="bg-[#FFFFFF] w-[42%] h-1"></div>
+                <div className="bg-[#595B60] h-1 w-[8%]"></div>
+              </div>
+            </div>
+          </div>
+          {/* knowledge & Interest */}
+          <div className=" mx-[50px] my-[100px]">
+            <div className=" flex flex-wrap gap-60">
+
+            {/* Knowledge */}
+            <div className="">
+              <h1 className=' text-white text-[20px] font-[700]'>Knowledge</h1>
+              <div className=" mt-[40px]">
+                <ul className=' flex flex-col gap-3'>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Bootstrap, TailwindCss</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>React, Vue, Laravel</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Stylus, Sass, Less</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Redux,RTK Query</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>React Native</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* Interest */}
+            <div className="">
+              <h1 className=' text-white text-[20px] font-[700]'>Interests</h1>
+              <div className=" mt-[40px]">
+                <ul className=' flex flex-col gap-3'>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Make UI/UX Design</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Create Mobile App</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Site Optimization</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Custom Website</span>
+                  </li>
+                  <li className=' flex gap-4 items-center  text-white'>
+                    <RiArrowRightSFill className='text-xl' />
+                    <span className=' text-[#BBBBBB]'>Learn Ecommerce</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </RootLayout>
   )
 }

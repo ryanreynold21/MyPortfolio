@@ -1,6 +1,6 @@
 import React from 'react'
 import RootLayout from '../layout/RootLayout'
-import akw from '../images/1.jpg'
+import akw from '../images/akw.jpg'
 import {FaFacebookSquare,FaTwitterSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa'
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
           </div>
           {/* content */}
           <div class=" mt-5 flex flex-col items-center gap-5">
-            <h1 className=' text-white text-[40px] lg:text-[60px] font-[700]'>Aung Kyaw Win</h1>
+            <h1 className=' text-white text-[40px] lg:text-[50px] font-[700]'>Aung Kyaw Win</h1>
             <p className=' text-[#BBBBBB] w-[350px] lg:w-[500px] text-md lg:text-lg text-center lg:text-start'>I am a Frontend Developer at heart and create features that are best suited for the job at hand.</p>
             <div className=" flex text-white text-2xl mt-2 gap-5">
               <span className=''> <a href="https://www.facebook.com/profile.php?id=100026937290228"> <FaFacebookSquare /> </a> </span>
