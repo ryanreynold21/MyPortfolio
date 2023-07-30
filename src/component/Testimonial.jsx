@@ -32,11 +32,11 @@ const Testimonial = () => {
     ]
   return (
     <div>
-       <div className="container px-5 md:px-2 pt-[50px] pb-[40px]">
+       <div className="container px-2 pt-[50px] pb-[40px]">
             <Swiper
               modules={[Autoplay]}
               autoplay={{
-                delay:2000,
+                delay:3000,
                 disableOnInteraction: false,
               }}
               spaceBetween={1}
@@ -52,8 +52,8 @@ const Testimonial = () => {
                     return(
                         <SwiperSlide>
                         <div key={slide.id} className=" grid grids-row-2 gap-2 md:gap-5 w-[350px] md:w-[550px]">
-                            <div className="border-2 border-white w-[400px]">
-                             <p className=" text-[#BBBBBB] px-8 py-5 text-sm md:text-[15px] mx-2 leading-10"> {slide.test} </p>
+                            <div className="border-2 border-white lg:w-[400px] w-[330px]">
+                             <p className=" text-[#BBBBBB] px-8 py-5 text-sm md:text-[15px] mx-2 leading-7 md:leading-8 lg:leading-10"> {slide.test} </p>
                             </div>
                           <div className=" md:col-span-3 flex items-center gap-7 ml-5 mt-4">
                           <img
