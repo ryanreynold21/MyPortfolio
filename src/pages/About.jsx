@@ -4,6 +4,7 @@ import akw from '../images/akw.jpg'
 import { status1 } from '../component/status'
 import { status2 } from '../component/status'
 import {RiArrowRightSFill} from 'react-icons/ri'
+import Testimonial from '../component/Testimonial'
 
 const About = () => {
   console.log(status2)
@@ -166,6 +167,13 @@ const About = () => {
                 </ul>
               </div>
             </div>
+            </div>
+          </div>
+          {/* Testimonial */}
+          <div className=" bg-[#494b50] pb-[80px]">
+            <div className=" mx-[50px] pt-[100px]">
+              <h1 className='text-white text-[20px] font-[700]'>Testimonials</h1>
+            <Testimonial />
             </div>
           </div>
         </div>
