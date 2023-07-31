@@ -26,7 +26,7 @@ const Sidebar = () => {
     <motion.div
     animate={{x:0}}
     initial={{x:"-100px"}}
-    className='  w-[250px] lg:w-[380px] h-screen shadow-2xl fixed left-0 bg-[#494B50] z-50'>
+    className='  w-[250px] lg:w-[380px] h-screen shadow-lg fixed left-0 bg-[#494B50] z-50'>
       <div className="">
         {/* Sidebar Brand */}
         <div className=" text-white text-[40px] font-bold hidden lg:block ml-28 mt-[100px]">

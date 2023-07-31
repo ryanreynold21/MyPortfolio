@@ -14,8 +14,8 @@ const About = () => {
         <div className="">
           {/* about */}
           <div className=" mt-[100px] lg:mt-[120px] mb-[50px] lg:mb-[80px] ml-[20px] lg:ml-[50px] flex flex-col gap-5">
-            <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[70px]">
-              <span className=' font-bold'>About</span> 
+            <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[80px]">
+              <span className=' font-bold'>ABOUT</span> 
             </div>
             <h1 className=' text-white text-[25px] lg:[text-30px] font-[800]'>About Me</h1>
           </div>
