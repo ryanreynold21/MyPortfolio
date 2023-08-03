@@ -25,6 +25,7 @@ const Sidebar = () => {
   return (
     <motion.div
     animate={{x:0}}
+    transition={{duration:0.5}}
     initial={{x:"-100px"}}
     className='  w-[250px] lg:w-[380px] h-screen shadow-lg fixed left-0 bg-[#494B50] z-50'>
       <div className="">

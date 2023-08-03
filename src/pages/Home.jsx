@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import RootLayout from '../layout/RootLayout'
 import akw from '../images/akw.jpg'
 import {FaFacebookSquare,FaTwitterSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa'
+import Loader from '../loader/Loader'
 
 const Home = () => {
+ 
+
   return (
+    <>
     <RootLayout>
       <section className="hero min-h-screen">
         <div className=" hero-content flex-col xl:flex-row gap-10 pt-4 lg:pt-10 lg:pr-32">
@@ -26,6 +30,7 @@ const Home = () => {
         </div>
       </section>
     </RootLayout>
+    </>
   )
 }
 

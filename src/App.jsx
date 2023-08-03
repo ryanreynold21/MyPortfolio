@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./App.css"
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
@@ -7,10 +7,19 @@ import Service from './pages/Service'
 import Portfolio from './pages/Portfolio'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import Loader from './loader/Loader'
 
 
 const App = () => {
+  const [panding,setPanding] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setPanding(false)
+    }, 3000);
+  },[panding])
   return (
+    <>
+    {panding && <Loader /> }
     <Routes>
       <Route path='/' element={ <Home /> } />
       <Route path='/about' element={ <About /> } />
@@ -19,6 +28,7 @@ const App = () => {
       <Route path='/news' element={ <News /> } />
       <Route path='/contact' element={ <Contact /> } />
     </Routes>
+    </>
 
     )
 }

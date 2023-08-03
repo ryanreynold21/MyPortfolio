@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import RootLayout from '../layout/RootLayout'
 import ServiceCard from '../component/ServiceCard'
 import Pricing from '../component/Pricing'
+import ServiceDetail from '../component/ServiceDetail'
 
 const Service = () => {
+  const [show,setShow] = useState(false)
+
   return (
+    <>
+    {show && <ServiceDetail show={show} setShow={setShow}/>}
     <RootLayout>
       <section>
         <div className="">
@@ -17,7 +22,7 @@ const Service = () => {
           </div>
           {/* Card */}
           <div className="ml-[20px] lg:ml-[50px]">
-            <ServiceCard />
+            <ServiceCard show={show} setShow={setShow} />
           </div>
           {/* fun fact */}
           <div className=" bg-[#494B50]">
@@ -51,6 +56,7 @@ const Service = () => {
         </div>
       </section>
     </RootLayout>
+    </>
   )
 }
 

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import Navbar from './Navbar'
+import Loader from '../loader/Loader'
 
 const RootLayout = ({children}) => {
     const [sidebarOpen,setSidebarOpen] = useState(true)
+    
     useEffect(() => {
       const handleWindowResize = () => {
         const isMobile = window.matchMedia("(max-width: 900px)").matches;
@@ -19,6 +21,7 @@ const RootLayout = ({children}) => {
     }, []);
  
   return (
+    <>
     <div>
         {sidebarOpen && <Sidebar /> }
       <div className=" lg:ml-[380px] bg-[#34353A] overflow-hidden">
@@ -26,6 +29,7 @@ const RootLayout = ({children}) => {
         {children}
       </div>
     </div>
+    </>
   )
 }
 
