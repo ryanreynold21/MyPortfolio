@@ -3,17 +3,11 @@ import { useSelector } from 'react-redux'
 
 const ServiceDetail = ({show,setShow}) => {
     const {card} = useSelector(state => state.card)
-    const ShowCard = () => {
-        const data = card?.map(cd => console.log(cd.payload.title))
-        return data
-    }
-    ShowCard()
-    
     const overlayHandler= () => {
         setShow(!show)
     }
     return (
-        <div className=" fixed inset-0 bg-black bg-opacity-50 flex z-[199] justify-center">
+        <div className=" fixed inset-0 bg-black bg-opacity-70 flex z-[199] justify-center">
             <div className=" flex-col m-14 gap-5 grid justify-items-stretch ">
                 {/* btn */}
                 <div onClick={overlayHandler} className=" justify-self-end">

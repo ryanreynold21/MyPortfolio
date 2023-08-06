@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     card:[],
+    blog:[],
 }
 
 export const cardSlice = createSlice({
@@ -10,9 +11,12 @@ export const cardSlice = createSlice({
     reducers:{
         increment : (state,{payload}) => {
             state.card = [{payload}]
+        },
+        blogDetail : (state,{payload}) => {
+            state.blog = [{payload}]
         }
     }
 })
 
-export const { increment } = cardSlice.actions;
+export const { increment , blogDetail } = cardSlice.actions;
 export default cardSlice.reducer;
