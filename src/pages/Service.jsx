@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import RootLayout from '../layout/RootLayout'
 import ServiceCard from '../component/ServiceCard'
 import Pricing from '../component/Pricing'
 import ServiceDetail from '../component/ServiceDetail'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Service = () => {
   const [show,setShow] = useState(false)
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
     {show && <ServiceDetail show={show} setShow={setShow}/>}
     <RootLayout>
       <section>
-        <div className="">
+        <div className="" data-aos="fade-right" data-aos-duration="1000">
           {/* Section */}
           <div className=" mt-[100px] lg:mt-[120px] mb-[50px] lg:mb-[80px] ml-[20px] lg:ml-[50px] flex flex-col gap-5">
             <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[100px]">

@@ -1,8 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useSelector } from 'react-redux'
 
-const Sidebar = () => {
+const Sidebar = ({sidebarOpen}) => {
+  const {open} = useSelector(state => state.card)
+  console.log(open)
   const data = [{
     name:'Home',
     to:'/'
@@ -22,11 +25,22 @@ const Sidebar = () => {
     name:'Contact',
     to:'/contact'
   },]
+  const contentVariants = {
+    hidden :{x:'-100px'},
+    visible:{
+      x:0,
+      transition:{duration:0.6}
+    }
+  }
+  const exitVariants = {
+   exit : {x:'100px'},
+   transition :{duration : 1}
+  }
   return (
     <motion.div
-    animate={{x:0}}
-    transition={{duration:0.5}}
-    initial={{x:"-100px"}}
+    {...(open === 'open' ? { variants: contentVariants } : { variants: exitVariants } )}
+    animate='visible'
+    initial='hidden'
     className='  w-[250px] lg:w-[380px] h-screen shadow-lg fixed left-0 bg-[#494B50] z-50'>
       <div className="">
         {/* Sidebar Brand */}

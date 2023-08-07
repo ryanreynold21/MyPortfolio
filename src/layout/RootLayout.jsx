@@ -23,7 +23,7 @@ const RootLayout = ({children}) => {
   return (
     <>
     <div>
-        {sidebarOpen && <Sidebar /> }
+        {sidebarOpen && <Sidebar sidebarOpen={sidebarOpen} /> }
       <div className=" lg:ml-[380px] bg-[#34353A] overflow-hidden">
         <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         {children}

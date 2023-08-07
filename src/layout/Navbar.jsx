@@ -1,9 +1,18 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { isOpen } from '../app/cardSlice';
 
 const Navbar = ({setSidebarOpen,sidebarOpen}) => {
+  const {open} = useSelector(state => state.card)
+  const dispatch = useDispatch();
+  console.log(open)
   const handler = () => {
-    console.log(sidebarOpen)
     setSidebarOpen(!sidebarOpen)
+    if(open === 'open'){
+      dispatch(isOpen('close'))
+    }else{
+      dispatch(isOpen('open'))
+    }
   }
   return (
     <div className=' fixed top-0 z-50 shadow-md block xl:hidden'>

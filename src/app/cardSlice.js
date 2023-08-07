@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     card:[],
     blog:[],
+    open:'',
 }
 
 export const cardSlice = createSlice({
@@ -14,9 +15,12 @@ export const cardSlice = createSlice({
         },
         blogDetail : (state,{payload}) => {
             state.blog = [{payload}]
+        },
+        isOpen : (state,{payload}) => {
+            state.open = payload
         }
     }
 })
 
-export const { increment , blogDetail } = cardSlice.actions;
+export const { increment , blogDetail , isOpen } = cardSlice.actions;
 export default cardSlice.reducer;

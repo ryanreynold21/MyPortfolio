@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import RootLayout from '../layout/RootLayout'
 import details1 from '../images/details1.jpg'
 import details2 from '../images/details2.jpg'
@@ -6,9 +6,15 @@ import details3 from '../images/details3.jpg'
 import details4 from '../images/details4.jpg'
 import NewsCard from '../component/NewsCard'
 import NewsDetail from '../component/NewsDetail'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const News = () => {
   const [show,setShow] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  },[]);
   const data = [
     {
       id : 1,
@@ -39,7 +45,7 @@ const News = () => {
     <>
     {show && <NewsDetail show={show} setShow={setShow} /> }
     <RootLayout>
-     <section>
+     <section data-aos="fade-right" data-aos-duration="1000">
       <div className="">
         {/* news */}
       <div className=" mt-[100px] lg:mt-[120px] mb-[50px] lg:mb-[80px] ml-[20px] lg:ml-[50px] flex flex-col gap-5">

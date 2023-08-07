@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import RootLayout from '../layout/RootLayout'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <RootLayout>
       <section>
-        <div className="">
+        <div className="" data-aos="fade-right" data-aos-duration="1000">
           {/* contact */}
           <div className=" mt-[100px] lg:mt-[120px] mb-[50px] lg:mb-[80px] ml-[20px] lg:ml-[50px] flex flex-col gap-5">
             <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[100px]">

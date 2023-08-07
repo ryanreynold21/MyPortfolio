@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hotelImage from '../images/hotel.jpg';
 import dashboardImage from '../images/dashboard.jpg';
 import contactImage from '../images/contact.jpg';
@@ -6,8 +6,13 @@ import shop from '../images/shop.jpg';
 import port from '../images/port.jpg';
 import travel from '../images/travel.jpg';
 import RootLayout from "../layout/RootLayout";
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const data = [
     { id : 1,
       name : 'Hotel Website',
@@ -49,7 +54,7 @@ const Portfolio = () => {
   return (
     <RootLayout>
       <section name='portfolio' className="">
-        <div className="">
+        <div className="" data-aos="fade-right" data-aos-duration="1000">
           {/* portfolio */}
         <div className=" mt-[100px] lg:mt-[120px] mb-[50px] lg:mb-[80px] ml-[20px] lg:ml-[50px] flex flex-col gap-5">
             <div className=" p-2 bg-[#3C3D42] text-[#959595] w-[100px] text-center">
