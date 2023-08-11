@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio'
 import News from './pages/News'
 import Contact from './pages/Contact'
 import Loader from './loader/Loader'
+import MouseFollower from './component/MouseFollower'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
   },[panding])
   return (
     <>
+    <MouseFollower />
     {panding && <Loader /> }
     <Routes>
       <Route path='/' element={ <Home /> } />

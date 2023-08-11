@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import Navbar from './Navbar'
-import Loader from '../loader/Loader'
 
 const RootLayout = ({children}) => {
     const [sidebarOpen,setSidebarOpen] = useState(true)
