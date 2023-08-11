@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux'
 
 const Sidebar = ({sidebarOpen}) => {
   const {open} = useSelector(state => state.card)
-  console.log(open)
   const data = [{
     name:'Home',
     to:'/'
@@ -49,7 +48,7 @@ const Sidebar = ({sidebarOpen}) => {
         </div>
         {/* sidebar */}
         <div className=" mt-48 lg:mt-12 lg:ml-16">
-          <ul className=' text-[#BBBBBB] text-[16px] lg:text-[20px] flex ml-5 lg:ml-10 flex-col gap-3 '>
+          <ul className='text-[#BBBBBB] text-[16px] lg:text-[20px] flex ml-5 lg:ml-10 flex-col gap-3 '>
             {data?.map(item => {
             return(
               <NavLink to={item.to}>
