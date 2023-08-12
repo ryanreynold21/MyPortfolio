@@ -36,7 +36,7 @@ const About = () => {
           {/* myself */}
           <div className="mx-[20px] md:mx-[30px] lg:mx-[50px]">
             <div className=" text-[13px] lg:text-[15px] text-[#BBBBBB] flex flex-col gap-5 border-b border-[#BBBBBB] pb-[30px]">
-                <p className=' leading-6 lg:leading-7'>Hello, I'm Adriano Smith, an experienced React developer. My journey began in web development with React, but over the last decade, I've devoted most of my waking hours to mastering React and creating exceptional web applications.</p>
+                <p className=' leading-6 lg:leading-7'>Hello, I'm Aung Kyaw Win, an experienced React developer. My journey began in web development with React, but over the last decade, I've devoted most of my waking hours to mastering React and creating exceptional web applications.</p>
                 <p className=' leading-6 lg:leading-7'>My specialty lies in crafting full-fledged platforms from scratch, where I transform ideas into reality. I take great pride in delivering websites and applications with a unique, outstanding, and contemporary look-and-feel. Thanks to my extensive knowledge of web mechanics, I excel in optimizing complex integrations to ensure minimal maintenance while ensuring they run smoothly for years to come. As a React developer, I'm passionate about building seamless user experiences and pushing the boundaries of what's possible with cutting-edge technologies.</p>
             </div>
           </div>
@@ -66,7 +66,9 @@ const About = () => {
           {/* button */}
           <div className="">
             <div className="mx-[20px] md:mx-[30px] lg:mx-[50px] mt-[50px] mb-[100px]">
-              <button className=' bg-white text-black px-[40px] py-[15px]'>Download CV</button>
+              <button className=' bg-white text-black px-[40px] py-[15px]'>
+                <a href="https://drive.google.com/file/d/17MAow5mrEswouNxvdB3Re8vVLzzKXEqp/view" target='_blink'>Download CV</a>
+              </button>
             </div>
           </div>
           {/* skills */}
