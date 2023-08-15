@@ -3,6 +3,8 @@ import RootLayout from '../layout/RootLayout'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2';
+
 // G9nyK9ZhU!eGVPK
 
 const Contact = () => {
@@ -25,6 +27,13 @@ const Contact = () => {
       },
       "zKkYgdkMuAge7WXcD"
     );
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Thanks For Your Messages',
+      showConfirmButton: false,
+      timer: 2000
+    })
     setEmail('');
     setName('');
     setMessage('');
@@ -59,6 +68,7 @@ const Contact = () => {
               <div className=" grid grid-cols-1 gap-10">
                 <div className="w-full">
                 <input
+                  required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder='Name' 
@@ -66,6 +76,7 @@ const Contact = () => {
                 </div>
                 <div className="">
                 <input
+                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder='Email'
@@ -73,6 +84,7 @@ const Contact = () => {
                 </div>
                 <div className=" w-full">
                   <textarea
+                   required
                    onChange={(e) => setMessage(e.target.value)}
                    value={message}
                    name=""
