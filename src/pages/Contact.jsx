@@ -1,9 +1,34 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import RootLayout from '../layout/RootLayout'
 import AOS from 'aos'
 import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
+// G9nyK9ZhU!eGVPK
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const data = { name, email, message };
+  const sendEmailHandler = (e) => {
+    e.preventDefault();
+    console.log(data)
+    emailjs.send(
+      "service_4dwj2vn",
+      "template_jgfcqwt",
+      {
+        to_name: "Aung",
+        from_name: data.name,
+        message: data.message,
+        reply_to: data.email,
+        reciever_mail: "aunkyawin2035gmail.com",
+      },
+      "zKkYgdkMuAge7WXcD"
+    );
+    setEmail('');
+    setName('');
+    setMessage('');
+  };
   useEffect(() => {
     AOS.init();
   }, []);
@@ -30,20 +55,33 @@ const Contact = () => {
           </div>
           {/* form */}
           <div className=" h-screen mx-[20px] md:mx-[30px] lg:mx-[50px] mt-[60px] ">
-            <form action="">
+            <form action="" onSubmit={sendEmailHandler}>
               <div className=" grid grid-cols-1 gap-10">
                 <div className="w-full">
-                <input placeholder='Name' type="text" className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]"/>
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder='Name' 
+                  type="text" className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]"/>
                 </div>
                 <div className="">
-                <input placeholder='Email' type="text" className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]"/>
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder='Email'
+                  type="email" className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]"/>
                 </div>
                 <div className=" w-full">
-                  <textarea name="" placeholder='Message' className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]" id="" cols="100" rows="6"></textarea>
+                  <textarea
+                   onChange={(e) => setMessage(e.target.value)}
+                   value={message}
+                   name=""
+                   placeholder='Message'
+                   className="mt-1 block w-full p-4 bg-[#34353A] border border-slate-500 text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-white text-white text-[17px] placeholder:text-[17px]" id="" cols="100" rows="6"></textarea>
                 </div>
                 <div className="">
                   <div className="">
-                    <button onClick={(e) => e.preventDefault()} className=' bg-white text-black px-[40px] py-[15px]'>Send Message</button>
+                    <button className=' bg-white text-black px-[40px] py-[15px]'>Send Message</button>
                   </div>
                 </div>
               </div>

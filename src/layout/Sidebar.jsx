@@ -6,21 +6,27 @@ import { useSelector } from 'react-redux'
 const Sidebar = ({sidebarOpen}) => {
   const {open} = useSelector(state => state.card)
   const data = [{
+    id : 1,
     name:'Home',
     to:'/'
   },{
+    id : 2,
     name:'About',
     to:'/about'
   },{
+    id : 3,
     name:'Service',
     to:'/service'
   },{
+    id : 4,
     name:'Portfolio',
     to:'/portfolio'
   },{
+    id : 5,
     name:'News',
     to:'/news'
   },{
+    id : 6,
     name:'Contact',
     to:'/contact'
   },]
@@ -51,7 +57,7 @@ const Sidebar = ({sidebarOpen}) => {
           <ul className='text-[#BBBBBB] text-[16px] lg:text-[20px] flex ml-5 lg:ml-10 flex-col gap-3 '>
             {data?.map(item => {
             return(
-              <NavLink to={item.to}>
+              <NavLink key={item.id} to={item.to}>
             <li>{item.name}</li>
               </NavLink>
             )  
