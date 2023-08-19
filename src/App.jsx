@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setPanding(false)
-    }, 3000);
+    }, 2500);
   },[panding])
   return (
     <>

@@ -1,23 +1,24 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import "./Loader.css";
 
 const Loader = () => {
   return (
-    <div>
-       <div className=" w-screen h-screen flex absolute z-[999]">
-        <motion.div
-        initial={{x:'0px' , opacity:1}}
-        animate={{x:'-800px',opacity:0.4  }}
-        transition={{ duration: 0.8 }}
-        className=" bg-white w-screen h-screen"></motion.div>
-        <motion.div
-         initial={{x:'0px' , opacity:1}}
-         animate={{x:'800px',opacity:0.54}}
-         transition={{ duration: 0.8 }}
-         className=" bg-white w-screen h-screen"></motion.div>
-      </div>
-    </div>
-  )
-}
+    <>
+    <div className="w-screen h-screen flex absolute z-[999] bg-[#494B50]">
 
-export default Loader
+      <svg className="spinner" viewBox="0 0 50 50">
+        <circle
+          className="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          strokeWidth="5"
+          ></circle>
+      </svg>
+          </div>
+    </>
+  );
+};
+
+export default Loader;
