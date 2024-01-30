@@ -4,6 +4,7 @@ import dashboardImage from '../images/dashboard.jpg';
 import contactImage from '../images/contact.jpg';
 import shop from '../images/shop.jpg';
 import port from '../images/port.jpg';
+import developX from '../images/developX.jpg';
 import travel from '../images/travel.jpg';
 import RootLayout from "../layout/RootLayout";
 import AOS from 'aos'
@@ -14,6 +15,12 @@ const Portfolio = () => {
     AOS.init();
   }, []);
   const data = [
+    { id : 6,
+      name : 'Company Profile',
+      using : 'React',
+      src : developX,
+      href : 'https://developx.app/'
+     },
     { id : 1,
       name : 'Hotel Website',
       using : 'React',
@@ -26,30 +33,25 @@ const Portfolio = () => {
       src : dashboardImage,
       href : 'https://admin-dashboard-xi-one.vercel.app/'
      },
-    { id : 3,
-      name : 'Contact App',
-      using : 'React',
-      src : contactImage,
-      href : 'https://hotel-project-cjahgenxu-khant-nyar-ko-ko.vercel.app/'
-    },
-   {  id : 4, 
-      name : 'E-commerse',
-      using : 'React',
-      src : shop,
-      href : '#'
-      },
      {id : 5, 
       name : 'Portfolio Website',
       using : 'React',
       src : port,
       href : 'https://incomparable-jalebi-c1894f.netlify.app/'
       },
-    { id : 6,
-      name : 'Travel Website',
+     { id : 3,
+       name : 'Contact App',
+       using : 'React',
+       src : contactImage,
+       href : 'https://hotel-project-cjahgenxu-khant-nyar-ko-ko.vercel.app/'
+     },
+     {  id : 4, 
+      name : 'E-commerse',
       using : 'React',
-      src : travel,
+      src : shop,
       href : '#'
-     }
+    },
+   
   ]
   return (
     <RootLayout>
