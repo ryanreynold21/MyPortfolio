@@ -28,6 +28,7 @@
 @media only screen and (max-width: 600px) {
   .mouse-follower {
     display: none;
+    position: static;
   }
 }
 
