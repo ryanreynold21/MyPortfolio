@@ -12,7 +12,7 @@ export const status1 = [
     {
         id : 3,
         name : 'Address:',
-        data : "1152,57qtr,SouthDagon"
+        data : "The Urbana 4 Chiang Mai Thailand"
     },
     {
         id : 4,
