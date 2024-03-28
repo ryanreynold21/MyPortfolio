@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../App.css'
 
 function MouseFollower() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -16,9 +17,10 @@ function MouseFollower() {
   }, []);
 
   const style = {
-    transform: `translate(${position.x}px, ${position.y}px)`,
+    transform: `translate(${position.x - 20}px, ${position.y - 20}px)`, // Adjusted by half the width and height of the circle
     transition: 'transform 0.1s ease-out',
   };
+  
 
   return (
     <div className="relative">

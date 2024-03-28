@@ -21,14 +21,14 @@
   pointer-events: none;
   box-sizing: border-box;
   z-index: 99999;
-  transform: translate(-50%, -50%);
+  transform: translate(-500px, -500px);
 }
 
 
 @media only screen and (max-width: 600px) {
   .mouse-follower {
     display: none;
-    position: static;
+    /* position: static; */
   }
 }
 
