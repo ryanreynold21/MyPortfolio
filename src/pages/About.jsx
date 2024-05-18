@@ -5,7 +5,6 @@ import { status1 } from '../component/status'
 import { status2 } from '../component/status'
 import {RiArrowRightSFill} from 'react-icons/ri'
 import Testimonial from '../component/Testimonial'
-import cv from '../../cv.pdf'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -13,7 +12,7 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const cvFilePath = '../../myCV.pdf';
+  const cvFilePath = './myCV.pdf';
 
   return (
     <RootLayout>
@@ -197,3 +196,5 @@ const About = () => {
 }
 
 export default About
+
+
