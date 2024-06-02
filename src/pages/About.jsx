@@ -12,7 +12,7 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const cvFilePath = './myResume.pdf';
+  const cvFilePath = './myCV.pdf';
 
   return (
     <RootLayout>
