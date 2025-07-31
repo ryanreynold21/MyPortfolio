@@ -8,10 +8,7 @@ import {
   FaTwitterSquare,
   FaInstagramSquare,
   FaGithubSquare,
-  FaLinkedinIn,
-  FaTelegramPlane,
-  FaFacebookF,
-  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -34,14 +31,16 @@ const Home = () => {
                 />
               </div>
               {/* content */}
-              <div class=" mt-5 flex flex-col items-center gap-5 cursor-none">
-                <h1 className=" text-white text-[40px] lg:text-[50px] font-[700]">
+              <div class=" mt-5 flex flex-col items-center xl:items-start gap-5 cursor-none">
+                <h1 className=" text-white text-[40px] lg:text-[54px] font-[700] font-montserrat">
                   Aung Kyaw Win
                 </h1>
-                <p className=" text-[#BBBBBB] w-[350px] lg:w-[500px] text-md lg:text-lg text-center lg:text-start">
-                  I am a Frontend Developer at heart and create features that
-                  are best suited for the job at hand.
-                </p>
+                <span className=" text-[#BBBBBB] w-[350px] lg:w-[500px] text-md leading-[30px] lg:text-lg text-center lg:text-start">
+                  Hi, I'm Aung Kyaw Win — a frontend developer with 4+ years of
+                  experience in React, Redux, Tailwind CSS, and Next.js. I’ve
+                  built responsive, user-friendly apps .I’m passionate about
+                  clean, efficient UI that works seamlessly across devices.
+                </span>
                 <div className=" flex text-white text-2xl mt-2 gap-5">
                   <span className="">
                     {" "}
@@ -50,30 +49,28 @@ const Home = () => {
                       href="https://www.facebook.com/profile.php?id=100026937290228"
                     >
                       {" "}
-                      <FaFacebookF />{" "}
+                      <FaFacebookSquare />{" "}
                     </a>{" "}
                   </span>
                   <span className="">
-                    <a href="https://t.me/aungKyaw_win" target="_blink">
-                      {" "}
-                      <FaTelegramPlane />{" "}
-                    </a>
+                    {" "}
+                    <FaTwitterSquare />{" "}
                   </span>
                   <span className="">
                     {" "}
                     <a
                       target="_blink"
-                      href="https://www.linkedin.com/in/aung-kyaw-win-473388287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      href="https://www.linkedin.com/in/aung-kyaw-win-473388287"
                     >
                       {" "}
-                      <FaLinkedinIn />
+                      <FaLinkedin />
                     </a>{" "}
                   </span>
                   <span className="">
                     {" "}
                     <a target="_blink" href="https://github.com/ryanreynold21">
                       {" "}
-                      <FaGithub />{" "}
+                      <FaGithubSquare />{" "}
                     </a>{" "}
                   </span>
                 </div>

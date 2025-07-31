@@ -46,15 +46,15 @@ const Sidebar = ({sidebarOpen}) => {
     {...(open === 'open' ? { variants: contentVariants } : { variants: exitVariants } )}
     animate='visible'
     initial='hidden'
-    className='  w-[250px] lg:w-[380px] h-screen shadow-lg fixed left-0 bg-[#494B50] z-50'>
+    className='  w-[250px] lg:w-[380px] flex items-center h-screen shadow-lg fixed left-0 bg-[#494B50] z-50'>
       <div className="">
         {/* Sidebar Brand */}
-        <div className=" text-white text-[40px] font-bold hidden lg:block ml-28 mt-[100px]">
-          <h1>A K W</h1>
+        <div className=" text-white text-[35px] font-bold hidden xl:block ml-28 mb-10">
+          <h3 className=' font-montserrat tracking-[6px]'>AKW</h3>
         </div>
         {/* sidebar */}
         <div className=" mt-48 lg:mt-12 lg:ml-16">
-          <ul className='text-[#BBBBBB] text-[16px] lg:text-[20px] flex ml-5 lg:ml-10 flex-col gap-3 '>
+          <ul className='text-[#BBBBBB]  font-montserrat text-[18px] flex ml-5 lg:ml-10 flex-col gap-3 '>
             {data?.map(item => {
             return(
               <NavLink key={item.id} to={item.to}>
