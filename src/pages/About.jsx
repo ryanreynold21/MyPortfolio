@@ -12,6 +12,8 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  const cvFilePath = './myCV.pdf';
+
   return (
     <RootLayout>
       <section>
@@ -67,7 +69,8 @@ const About = () => {
           <div className="">
             <div className="mx-[20px] md:mx-[30px] lg:mx-[50px] mt-[50px] mb-[100px]">
               <button className=' bg-white text-black px-[40px] py-[15px]'>
-                <a href='https://drive.google.com/file/d/11kOxcxy7dwq6lviotaU_VdcTFJghZySU/view?usp=drive_link' target='_blink'>Download CV</a>
+                {/* <a href='https://drive.google.com/file/d/11kOxcxy7dwq6lviotaU_VdcTFJghZySU/view?usp=drive_link' target='_blink'>Download CV</a> */}
+                <a href={cvFilePath} download>Download CV</a>
               </button>
             </div>
           </div>
@@ -193,3 +196,5 @@ const About = () => {
 }
 
 export default About
+
+
