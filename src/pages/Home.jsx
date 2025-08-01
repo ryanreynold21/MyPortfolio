@@ -5,10 +5,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {
   FaFacebookSquare,
-  FaTwitterSquare,
+  FaLine,
   FaInstagramSquare,
   FaGithubSquare,
   FaLinkedin,
+  FaTelegram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -42,36 +43,59 @@ const Home = () => {
                   clean, efficient UI that works seamlessly across devices.
                 </span>
                 <div className=" flex text-white text-2xl mt-2 gap-5">
-                  <span className="">
-                    {" "}
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
                     <a
-                      target="_blink"
+                      target="_blank"
                       href="https://www.facebook.com/profile.php?id=100026937290228"
+                      rel="noopener noreferrer"
                     >
-                      {" "}
-                      <FaFacebookSquare />{" "}
-                    </a>{" "}
+                      <FaFacebookSquare />
+                    </a>
                   </span>
-                  <span className="">
-                    {" "}
-                    <FaTwitterSquare />{" "}
-                  </span>
-                  <span className="">
-                    {" "}
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
                     <a
-                      target="_blink"
+                      target="_blank"
                       href="https://www.linkedin.com/in/aung-kyaw-win-473388287"
+                      rel="noopener noreferrer"
                     >
-                      {" "}
                       <FaLinkedin />
-                    </a>{" "}
+                    </a>
                   </span>
-                  <span className="">
-                    {" "}
-                    <a target="_blink" href="https://github.com/ryanreynold21">
-                      {" "}
-                      <FaGithubSquare />{" "}
-                    </a>{" "}
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
+                    <a
+                      target="_blank"
+                      href="https://github.com/ryanreynold21"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithubSquare />
+                    </a>
+                  </span>
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
+                    <a
+                      target="_blank"
+                      href="https://t.me/aungKyaw_win"
+                      rel="noopener noreferrer"
+                    >
+                      <FaTelegram />
+                    </a>
+                  </span>
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/aungkyawwin106?igsh=MTB4cWtrejl0NG9rOQ=="
+                      rel="noopener noreferrer"
+                    >
+                      <FaInstagramSquare />
+                    </a>
+                  </span>
+                  <span className="hover:text-[#BBBBBB] transition-colors duration-300">
+                    <a
+                      target="_blank"
+                      href="https://line.me/ti/p/aungKyaw_win"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLine />
+                    </a>
                   </span>
                 </div>
               </div>
