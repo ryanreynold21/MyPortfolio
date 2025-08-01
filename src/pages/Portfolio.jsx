@@ -40,13 +40,13 @@ const Portfolio = () => {
       href : 'https://incomparable-jalebi-c1894f.netlify.app/'
       },
      { id : 3,
-       name : 'Contact App',
-       using : 'React',
+       name : 'Map Discovery App',
+       using : 'Typescript',
        src : contactImage,
-       href : 'https://hotel-project-cjahgenxu-khant-nyar-ko-ko.vercel.app/'
+       href : 'https://veteran-driver-v1.netlify.app/'
      },
      {  id : 4, 
-      name : 'E-commerse',
+      name : 'MOVIE',
       using : 'React',
       src : shop,
       href : '#'
