@@ -7,12 +7,12 @@ export const status1 = [
     {
         id : 2,
         name : 'Age:',
-        data : "21"
+        data : "23"
     },
     {
         id : 3,
         name : 'Address:',
-        data : "The Urbana 4 Chiang Mai Thailand"
+        data : "Da Nang City, Vietnam"
     },
     {
         id : 4,
@@ -22,7 +22,7 @@ export const status1 = [
     {
         id : 5,
         name : 'Phone:',
-        data : "+959 424 580 117"
+        data : "09 409559944 , 0378354757"
     },
 ]
 
