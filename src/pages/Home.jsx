@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import RootLayout from "../layout/RootLayout";
-import akw from "../images/akw.jpg";
+import akw from "../images/akw2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -22,7 +22,7 @@ const Home = () => {
       <RootLayout>
         <section className="hero min-h-screen">
           <div className="" data-aos="fade-right" data-aos-duration="1000">
-            <div className=" hero-content flex-col xl:flex-row gap-10 pt-4 lg:pt-10 lg:pr-32">
+            <div className=" hero-content flex-col xl:flex-row gap-10 pt-4 lg:pt-10">
               {/* photo */}
               <div className="ml-10 mr-10 lg:ml-10 lg:mr-5">
                 <img
