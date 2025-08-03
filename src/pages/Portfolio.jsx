@@ -4,7 +4,7 @@ import dashboardImage from '../images/dashboard.jpg';
 import contactImage from '../images/contact.jpg';
 import shop from '../images/shop.jpg';
 import port from '../images/port.jpg';
-import developX from '../images/developX.jpg';
+import developX from '../images/d2.jpg';
 import travel from '../images/travel.jpg';
 import RootLayout from "../layout/RootLayout";
 import AOS from 'aos'
@@ -66,7 +66,7 @@ const Portfolio = () => {
           </div>
           {/* card */}
           <div className=" container md:px-10 mb-[100px]">
-            <div className=" grid z-[-1] md:grid-cols-3 gap-10 mx-10 ">
+            <div className=" grid z-[-1] lg:grid-cols-2 2xl:grid-cols-3 gap-10 mx-10 ">
               {data?.map(pot => {
                 return(
                   <a
@@ -78,7 +78,7 @@ const Portfolio = () => {
                   <div className=" overflow-hidden relative group bg-black rounded shadow-lg">
                     <img
                       src={pot?.src}
-                      className="w-full h-[350px] object-cover transition duration-900 ease-in-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:opacity-60 "
+                      className="min-w-full h-[350px] object-cover object-top transition duration-900 ease-in-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:opacity-60 "
                       alt=""
                     />
                     <div className=" absolute top-[40%] left-[30%] hidden group-hover:flex flex-col justify-start items-start duration-900 ease-in-out">

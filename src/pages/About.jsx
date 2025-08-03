@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import RootLayout from "../layout/RootLayout";
-import akw from "../images/akw2.jpg";
+import akw from "../images/ab2.jpg";
 import { status1 } from "../component/status";
 import { status2 } from "../component/status";
 import { RiArrowRightSFill } from "react-icons/ri";
@@ -31,7 +31,7 @@ const About = () => {
           <div className="flex justify-center items-center ">
             <img
               src={akw}
-              className="h-[200px] md:h-[400px] lg:h-[600px] min-w-[90%] object-cover shadow-xl"
+              className="min-h-[60%] min-w-[90%] object-cover object-top shadow-xl"
               alt=""
             />
           </div>
