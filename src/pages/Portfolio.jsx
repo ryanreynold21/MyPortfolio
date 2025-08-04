@@ -23,6 +23,14 @@ const Portfolio = () => {
       href: "https://developx.app/",
     },
     {
+      id: 2,
+      name: "Movie Streaming",
+      using: "React",
+      src: travel,
+      // href: "https://admin-dashboard-xi-one.vercel.app/",
+      href: "https://moviespree.netlify.app/",
+    },
+    {
       id: 3,
       name: "Map Discovery App",
       using: "Typescript",
@@ -36,13 +44,7 @@ const Portfolio = () => {
       src: hotelImage,
       href: "https://hotel-project-cjahgenxu-khant-nyar-ko-ko.vercel.app/",
     },
-    {
-      id: 2,
-      name: "Admin Dashboard",
-      using: "React",
-      src: dashboardImage,
-      href: "https://admin-dashboard-xi-one.vercel.app/",
-    },
+
     {
       id: 5,
       name: "Portfolio Website",
@@ -51,7 +53,13 @@ const Portfolio = () => {
       href: "https://incomparable-jalebi-c1894f.netlify.app/",
     },
 
-    { id: 4, name: "Company Profile", using: "React", src: shop, href: "https://depro.site" },
+    {
+      id: 4,
+      name: "Company Profile",
+      using: "React",
+      src: shop,
+      href: "https://depro.site",
+    },
   ];
   return (
     <RootLayout>
