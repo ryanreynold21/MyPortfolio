@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import hotelImage from "../images/h2.jpg";
 import dashboardImage from "../images/b2.jpg";
 import contactImage from "../images/v1.jpg";
-import shop from "../images/shop.jpg";
+import shop from "../images/dp2.jpg";
 import port from "../images/p2.jpg";
 import developX from "../images/d2.jpg";
-import travel from "../images/travel.jpg";
+import travel from "../images/sp1.jpg";
 import RootLayout from "../layout/RootLayout";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,6 +38,13 @@ const Portfolio = () => {
       href: "https://veteran-driver-v1.netlify.app/",
     },
     {
+      id: 4,
+      name: "Company Profile",
+      using: "React",
+      src: shop,
+      href: "https://depro.site",
+    },
+    {
       id: 1,
       name: "Hotel Website",
       using: "React",
@@ -51,14 +58,6 @@ const Portfolio = () => {
       using: "React",
       src: port,
       href: "https://incomparable-jalebi-c1894f.netlify.app/",
-    },
-
-    {
-      id: 4,
-      name: "Company Profile",
-      using: "React",
-      src: shop,
-      href: "https://depro.site",
     },
   ];
   return (
