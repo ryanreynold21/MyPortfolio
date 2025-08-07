@@ -310,7 +310,7 @@ const About = () => {
                       {/* Company and Role */}
                       <div className="lg:text-right">
                         <h3 className="text-white text-[18px] lg:text-[20px] font-[700]">
-                          Movie and Entertainment
+                        DevelopX
                         </h3>
                         <p className="text-[#BBBBBB] text-[14px] lg:text-[16px]">
                           Frontend Developer
@@ -336,7 +336,7 @@ const About = () => {
                       {/* Company and Role */}
                       <div className="lg:text-right">
                         <h3 className="text-white text-[18px] lg:text-[20px] font-[700]">
-                          CMS, POS, and Admin Dashboard
+                          MMSIT
                         </h3>
                         <p className="text-[#BBBBBB] text-[14px] lg:text-[16px]">
                         Frontend Developer
