@@ -106,12 +106,14 @@ const About = () => {
           {/* button */}
           <div className="">
             <div className="mx-[20px] md:mx-[30px] lg:mx-[50px] mt-[50px] mb-[100px]">
-              <button className=" bg-white text-black px-[40px] py-[15px]">
-                {/* <a href='https://drive.google.com/file/d/11kOxcxy7dwq6lviotaU_VdcTFJghZySU/view?usp=drive_link' target='_blink'>Download CV</a> */}
-                <a href={cvFilePath} download>
+              <a
+                href="https://drive.google.com/file/d/1uAsngPnKwSvPRxh6DKe0atodkHeRfpdK/view?usp=sharing"
+                target="_blink"
+              >
+                <button className=" bg-white text-black px-[40px] py-[15px]">
                   Download CV
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
           {/* skills */}
@@ -310,7 +312,7 @@ const About = () => {
                       {/* Company and Role */}
                       <div className="lg:text-right">
                         <h3 className="text-white text-[18px] lg:text-[20px] font-[700]">
-                        DevelopX
+                          DevelopX
                         </h3>
                         <p className="text-[#BBBBBB] text-[14px] lg:text-[16px]">
                           Frontend Developer
@@ -339,7 +341,7 @@ const About = () => {
                           MMSIT
                         </h3>
                         <p className="text-[#BBBBBB] text-[14px] lg:text-[16px]">
-                        Frontend Developer
+                          Frontend Developer
                         </p>
                       </div>
                     </div>
