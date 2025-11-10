@@ -213,8 +213,50 @@ const About = () => {
               </div>
             </div>
           </div>
+          {/* Certificates */}
+          <div className="px-[20px] md:px-[30px] lg:px-[50px] py-[100px] bg-[#34353A]">
+            <h1 className="text-white text-[18px] md:text-[20px] lg:text-[22px] mb-10 font-[700]">
+              Certifications
+            </h1>
+
+            <div className="flex flex-col gap-8">
+              {/* React & TypeScript Certificate */}
+              <div className="-6 rounded-lg shadow-md flex flex-col gap-4">
+                <div>
+                  <h2 className="text-white text-[18px] lg:text-[18px] font-[700]">
+                    React & TypeScript – Certificate of Completion
+                  </h2>
+                  <p className="text-[#BBBBBB] mt-2 text-[13px] lg:text-[15px]">
+                    Successfully completed an intensive training program in
+                    React and TypeScript, focusing on building scalable and
+                    maintainable frontend applications. The program enhanced my
+                    understanding of component-based architecture, state
+                    management with Redux and React hooks, and type-safe
+                    programming with TypeScript.
+                  </p>
+                  <p className="text-[#BBBBBB] mt-2 text-[13px] lg:text-[15px] leading-6">
+                    This certificate demonstrates my ability to not only
+                    understand core React and TypeScript concepts but also to
+                    apply them in practical solutions, delivering robust,
+                    maintainable, and user-friendly web applications.
+                  </p>
+                </div>
+                <div className="mt-3 xl:mt-5">
+                  <a
+                    href="https://drive.google.com/file/d/1C8HVJMtLYPf4tVNnfN8d54mA8z4XFgs7/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black px-6 py-3 rounded-md hover:bg-gray-200 transition"
+                  >
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* knowledge & Interest */}
-          <div className="mx-[20px] md:mx-[30px] lg:mx-[50px] my-[100px]">
+          <div className="px-[20px] md:px-[30px] lg:px-[50px] py-[100px] bg-[#494B50]">
             <div className=" flex flex-wrap gap-10 md:gap-40 lg:gap-60">
               {/* Knowledge */}
               <div className="">
@@ -248,6 +290,10 @@ const About = () => {
                     <li className=" flex gap-4 items-center  text-white">
                       <RiArrowRightSFill className="text-xl" />
                       <span className=" text-[#BBBBBB]">React Native</span>
+                    </li>
+                    <li className=" flex gap-4 items-center  text-white">
+                      <RiArrowRightSFill className="text-xl" />
+                      <span className=" text-[#BBBBBB]">AWS , Cloud Computing</span>
                     </li>
                   </ul>
                 </div>
@@ -285,7 +331,7 @@ const About = () => {
             </div>
           </div>
           {/* Experience */}
-          <div className="px-[20px] md:px-[30px] lg:px-[50px] py-[100px] bg-[#494B50]">
+          <div className="px-[20px] md:px-[30px] lg:px-[50px] py-[100px]">
             <h1 className="text-white text-[20px] lg:text-[22px] font-[700] mb-[50px]">
               Experience
             </h1>
