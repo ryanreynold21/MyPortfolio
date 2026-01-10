@@ -7,6 +7,8 @@ import { RiArrowRightSFill } from "react-icons/ri";
 import Testimonial from "../component/Testimonial";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = () => {
   useEffect(() => {
@@ -28,11 +30,17 @@ const About = () => {
             </h1>
           </div>
           {/* Photo */}
-          <div className="flex justify-center items-center ">
-            <img
+          <div className="flex justify-center items-center xl:px-20 px-0">
+            {/* <img
               src={akw}
               className="min-h-[60%] min-w-[90%] object-cover object-top shadow-xl"
               alt=""
+            /> */}
+            <LazyLoadImage
+              alt=""
+              className="min-h-[60%] min-w-[90%] object-cover object-top shadow-xl rounded-xl"
+              src={akw}
+              effect="blur"
             />
           </div>
           {/* name */}
@@ -40,7 +48,7 @@ const About = () => {
             <h3 className=" text-[20px] lg:text-[22px] font-[700] text-white">
               Aung Kyaw Win
             </h3>
-            <span className=" text-[#bbbbbb]">Front-end Developer</span>
+            <span className=" text-[#bbbbbb]">Front-end Developer akw</span>
             {/* <p className=' w-full bg-[#FFFFFF] h-[1px]'></p> */}
           </div>
           {/* myself */}
@@ -293,7 +301,9 @@ const About = () => {
                     </li>
                     <li className=" flex gap-4 items-center  text-white">
                       <RiArrowRightSFill className="text-xl" />
-                      <span className=" text-[#BBBBBB]">AWS , Cloud Computing</span>
+                      <span className=" text-[#BBBBBB]">
+                        AWS , Cloud Computing
+                      </span>
                     </li>
                   </ul>
                 </div>

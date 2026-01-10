@@ -9,6 +9,8 @@ import travel from "../images/sp1.jpg";
 import RootLayout from "../layout/RootLayout";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -84,17 +86,22 @@ const Portfolio = () => {
                     className=" link-overlay"
                     target="_blank"
                   >
-                    <div className=" overflow-hidden relative group bg-black rounded-[10px] shadow-lg">
-                      <img
-                        src={pot?.src}
-                        className="min-w-full h-[350px] object-cover object-top transition duration-900 ease-in-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:opacity-60 "
-                        alt=""
-                      />
-                      <div className=" absolute top-[40%] left-[30%] hidden group-hover:flex flex-col justify-start items-start duration-900 ease-in-out">
-                        <h3 className=" text-black text-[17px] p-2 font-[500] bg-white">
+                    <div className="overflow-hidden relative group bg-black rounded-[10px] shadow-lg">
+                      <div className="w-full h-[350px] transition duration-900 ease-in-out group-hover:-translate-y-1 group-hover:scale-110 group-hover:opacity-60">
+                        <LazyLoadImage
+                          src={pot?.src}
+                          alt=""
+                          effect="blur"
+                          wrapperClassName="w-full h-full"
+                          className="w-full h-full object-cover object-top"
+                        />
+                      </div>
+
+                      <div className="absolute top-[40%] left-[30%] hidden group-hover:flex flex-col duration-900 ease-in-out rounded-xl">
+                        <h3 className="text-black text-[17px] p-2 font-[500] bg-white">
                           {pot?.name}
                         </h3>
-                        <p className=" text-slate-500 text-start p-2 bg-white">
+                        <p className="text-slate-500 p-2 bg-white">
                           {pot?.using}
                         </p>
                       </div>

@@ -10,8 +10,11 @@ import {
   FaGithubSquare,
   FaLinkedin,
   FaTelegram,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Home = () => {
   useEffect(() => {
@@ -25,11 +28,17 @@ const Home = () => {
             <div className=" hero-content flex-col xl:flex-row gap-10 pt-4 lg:pt-10">
               {/* photo */}
               <div className="ml-10 mr-10 lg:ml-10 lg:mr-5">
-                <img
+                <LazyLoadImage
+                  alt=""
+                  className="w-[250px] lg:w-[300px] h-[250px] lg:h-[300px] object-cover border-[10px] border-[#4D4D4D] rounded-full"
+                  src={akw}
+                  effect="blur"
+                />
+                {/* <img
                   className="w-[250px] lg:w-[300px] h-[250px] lg:h-[300px] object-cover border-[10px] border-[#4D4D4D] rounded-full"
                   src={akw}
                   alt=""
-                />
+                /> */}
               </div>
               {/* content */}
               <div class=" mt-5 flex flex-col items-center xl:items-start gap-5 cursor-none">
@@ -82,10 +91,10 @@ const Home = () => {
                   <span className="hover:text-[#BBBBBB] transition-colors duration-300">
                     <a
                       target="_blank"
-                      href="https://www.instagram.com/aungkyawwin106?igsh=MTB4cWtrejl0NG9rOQ=="
+                      href="https://wa.me/qr/7U4FYNU5AMKLH1"
                       rel="noopener noreferrer"
                     >
-                      <FaInstagramSquare />
+                      <FaWhatsapp />
                     </a>
                   </span>
                   <span className="hover:text-[#BBBBBB] transition-colors duration-300">

@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import {
   FaFacebookSquare,
   FaLine,
-  FaInstagramSquare,
+  FaWhatsapp,
   FaGithubSquare,
   FaLinkedin,
   FaTelegram,
@@ -164,10 +164,10 @@ const Contact = () => {
                 <span className="hover:text-[#BBBBBB] transition-colors duration-300">
                   <a
                     target="_blank"
-                    href="https://www.instagram.com/aungkyawwin106?igsh=MTB4cWtrejl0NG9rOQ=="
+                    href="https://wa.me/qr/7U4FYNU5AMKLH1"
                     rel="noopener noreferrer"
                   >
-                    <FaInstagramSquare />
+                    <FaWhatsapp />
                   </a>
                 </span>
                 <span className="hover:text-[#BBBBBB] transition-colors duration-300">
