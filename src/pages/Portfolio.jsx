@@ -44,7 +44,8 @@ const Portfolio = () => {
       name: "Company Profile",
       using: "React",
       src: shop,
-      href: "https://depro.site",
+      // href: "https://depro.site",
+      href: "https://depro.netlify.app/",
     },
     {
       id: 1,
