@@ -205,7 +205,8 @@ export const projects = [
     name: "Company Profile",
     tech: "React",
     image: companyProfileImg,
-    href: "https://developx.app/",
+    // href: "https://developx.app/",
+    href: "https://developxs.netlify.app/",
   },
   {
     id: 2,
