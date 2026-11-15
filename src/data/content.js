@@ -21,6 +21,7 @@ import mapDiscoveryImg from "../images/v1.jpg";
 import deproImg from "../images/dp2.jpg";
 import hotelImg from "../images/h2.jpg";
 import portfolioImg from "../images/p2.jpg";
+import rv1 from "../images/rv1.png";
 
 export const email = "aunkyawin2035@gmail.com";
 
@@ -209,6 +210,13 @@ export const projects = [
     href: "https://developxs.netlify.app/",
   },
   {
+    id: 5,
+    name: "RV-T",
+    tech: "React",
+    image: rv1,
+    href: "https://pharmaceutical-frontend-xi.vercel.app/",
+  },
+  {
     id: 2,
     name: "Movie Streaming",
     tech: "React",
@@ -229,13 +237,7 @@ export const projects = [
     image: deproImg,
     href: "https://depro.netlify.app/",
   },
-  {
-    id: 5,
-    name: "Hotel Website",
-    tech: "React",
-    image: hotelImg,
-    href: "https://hotel-project-cjahgenxu-khant-nyar-ko-ko.vercel.app/",
-  },
+
   {
     id: 6,
     name: "Portfolio Website",
