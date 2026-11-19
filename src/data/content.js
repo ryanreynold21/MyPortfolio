@@ -26,7 +26,7 @@ import rv1 from "../images/rv1.png";
 export const email = "aunkyawin2035@gmail.com";
 
 export const cvUrl =
-  "https://drive.google.com/file/d/1h711oor3MG0XCVDIQr-pQie8KTv5nici/view?usp=sharing";
+  "https://drive.google.com/file/d/1Gt_bkfNN5og7Pc3OrDbfr3T9e2E8xKwy/view?usp=sharing";
 
 export const certificateUrl =
   "https://drive.google.com/file/d/1C8HVJMtLYPf4tVNnfN8d54mA8z4XFgs7/view?usp=sharing";
